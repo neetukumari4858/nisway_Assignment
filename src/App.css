@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato-Black", sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --primery-blue-color: #2874f0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+html {
+  font-size: 62.5%;
+}
+@media (max-width: 998px) {
+  html {
+    font-size: 55%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media (max-width: 768px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+.inner_container {
+  height: 140vh;
+  width: 100%;
+  margin-top: 4rem;
   display: flex;
+
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
+  padding-left: 5rem;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  gap: 3.5rem;
+}
+.article_list_item {
+  width: 125rem;
+  font-size: 1.3rem;
+  padding: 2rem 2rem 2rem 2rem;
+  flex-wrap: wrap;
+  box-shadow: 1px 1px 4px 1px gainsboro;
+}
+.heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.article_list_container {
+  display: flex;
+}
+.headline {
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+.title {
+  font-size: 1.7rem;
+  margin-top: 1rem;
+}
+.author {
+  font-weight: 900;
+
+  color: var(--primery-blue-color);
+}
+.date {
+  font-size: 1.5rem;
+}
+.author_date_div {
+  display: flex;
+
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+.experpt {
+  font-size: 1.7rem;
+}
+span{
+  font-weight: 900;
+  color: black;
 }
