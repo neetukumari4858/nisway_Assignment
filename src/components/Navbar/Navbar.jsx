@@ -4,10 +4,12 @@ import { AiFillGithub } from "react-icons/ai";
 const Navbar = () => {
   return (
     <div className="header">
-      <h1 className="header_text_color">Royalty</h1>
-
+      <a className="name" href="/">
+        <h1 className="header_text_color">Latest News</h1>
+      </a>
       <a
-        href="https://github.com/neetukumari4858/address-book-manager"
+        rel="noreferrer"
+        href="https://github.com/neetukumari4858/nisway_Assignment"
         target="_blank"
         className="header_text_color"
       >

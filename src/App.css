@@ -6,6 +6,7 @@
 }
 :root {
   --primery-blue-color: #2874f0;
+  --shadow-color: gainsboro;
 }
 html {
   font-size: 62.5%;
@@ -21,25 +22,30 @@ html {
     font-size: 45%;
   }
 }
+@media (max-width: 425px) {
+  html {
+    font-size: 35%;
+  }
+}
 
 .inner_container {
-  height: 140vh;
   width: 100%;
   margin-top: 4rem;
   display: flex;
-
   flex-direction: column;
-
   padding-left: 5rem;
-
   gap: 3.5rem;
 }
 .article_list_item {
-  width: 125rem;
+  width: 100%;
   font-size: 1.3rem;
   padding: 2rem 2rem 2rem 2rem;
   flex-wrap: wrap;
-  box-shadow: 1px 1px 4px 1px gainsboro;
+  display: flex;
+  gap: 2.3rem;
+  margin-right: 5rem;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 4px 1px var(--shadow-color);
 }
 .heading {
   font-size: 2.5rem;
@@ -51,6 +57,13 @@ html {
 .headline {
   font-size: 2.3rem;
   font-weight: 500;
+}
+.headline_link {
+  text-decoration: none;
+  color: black;
+}
+.headline_link:hover {
+  color: var(--primery-blue-color);
 }
 .title {
   font-size: 1.7rem;
@@ -66,14 +79,24 @@ html {
 }
 .author_date_div {
   display: flex;
-
+  flex-direction: column;
   gap: 2rem;
   font-size: 1.5rem;
 }
 .experpt {
-  font-size: 1.7rem;
+  font-size: 1.9rem;
+  margin-top: 1rem;
 }
-span{
-  font-weight: 900;
-  color: black;
+span {
+  font-weight: 600;
+}
+
+.image_size {
+  height: 25rem;
+  width: 30rem;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 4px 1px var(--shadow-color);
+}
+.content_div {
+  width: 87rem;
 }
