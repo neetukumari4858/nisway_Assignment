@@ -1,4 +1,4 @@
-# Nisway Assignment
+# Niswey Assignment
 This is an Assignment of the latest news Articles A user can see at least 10 news Articles on the Home Page and by clicking on the headline it will show the detail of particular news
 ## Used Technology
 ```
